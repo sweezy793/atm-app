@@ -1,0 +1,20 @@
+<div>
+  <h1>Dashboard</h1>
+  <h2>Balance: {{ dashboardService.balance }}</h2>
+
+  <div>
+    <h1>Withdraw Money</h1>
+    <input type="number" [(ngModel)]="dashboardService.withdrawAmt" />
+    <button type="submit" (click)="dashboardService.withdraw()">
+      Withdraw
+    </button>
+  </div>
+
+  <div>
+    <h1>Add Money</h1>
+    <input type="number" [(ngModel)]="dashboardService.addAmt" />
+    <button type="submit" (click)="dashboardService.add()">Add</button>
+  </div>
+
+  <div><button (click)="dashboardService.logout()">Logout</button></div>
+</div>

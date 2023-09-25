@@ -1,0 +1,7 @@
+<div>
+  <input type="text" [(ngModel)]="username" placeholder="username" />
+  <input type="password" [(ngModel)]="password" placeholder="password" />
+  <button type="submit" (click)="loginService.validate(username, password)">
+    Submit
+  </button>
+</div>
